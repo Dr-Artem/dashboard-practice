@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="./css/main.css"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <div
+            id="NP-Energy"
+            class="dataframe"
+        >
+            <div class="dataframeTitle">
+                <div>
+                    <p>SOLAR ENERGY PRODUCTION</p>
+                    <span>DESIGNED BY DATA212</span>
+                </div>
+                <div>
+                    <label for="">Energy tariff, $/kWh:</label
+                    ><input type="number" /><label for=""
+                        >Emission factor, kgCO2/kWh:</label
+                    ><input type="number" />
+                </div>
+            </div>
+            <table class="dataframeData">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Total</th>
+                        <th>This Month</th>
+                        <th>This Week</th>
+                        <th>Today</th>
+                    </tr>
+                    <tr>
+                        <td>Energy</td>
+                        <td
+                            class="td-data"
+                            data-column="1"
+                        ></td>
+                        <td
+                            class="td-data"
+                            data-column="2"
+                        ></td>
+                        <td
+                            class="td-data"
+                            data-column="3"
+                        ></td>
+                        <td
+                            class="td-data"
+                            data-column="4"
+                        ></td>
+                    </tr>
+                    <tr>
+                        <td>Saving</td>
+                        <td
+                            class="td-data"
+                            data-column="1"
+                        ></td>
+                        <td
+                            class="td-data"
+                            data-column="2"
+                        ></td>
+                        <td
+                            class="td-data"
+                            data-column="3"
+                        ></td>
+                        <td
+                            class="td-data"
+                            data-column="4"
+                        ></td>
+                    </tr>
+                    <tr>
+                        <td>Emissions</td>
+                        <td
+                            class="td-data"
+                            data-column="1"
+                        ></td>
+                        <td
+                            class="td-data"
+                            data-column="2"
+                        ></td>
+                        <td
+                            class="td-data"
+                            data-column="3"
+                        ></td>
+                        <td
+                            class="td-data"
+                            data-column="4"
+                        ></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div
+                id="seasonalFrame"
+                class="seasonalFrame"
+            ></div>
+            <div
+                id="dailyFrame"
+                class="dailyFrame"
+            ></div>
+            <div
+                id="monthlyFrame"
+                class="monthlyFrame"
+            ></div>
+            <div
+                id="hourlyFrame"
+                class="hourlyFrame"
+            ></div>
+        </div>
+    </body>
+    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
+    <script src="./js/slider.js"></script>
+</html>
